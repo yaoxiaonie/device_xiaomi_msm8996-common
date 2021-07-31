@@ -230,6 +230,12 @@ PRODUCT_PACKAGES += \
 PRODUCT_PACKAGES += \
     vendor.qti.hardware.cryptfshw@1.0-service-qti.qsee
 
+# IMS
+PRODUCT_PACKAGES += \
+    ims-ext-common \
+    ims_ext_common.xml \
+    libvt_shim
+    
 # Input
 PRODUCT_COPY_FILES += \
     $(LOCAL_PATH)/keylayout/gpio-keys.kl:$(TARGET_COPY_OUT_VENDOR)/usr/keylayout/gpio-keys.kl \
@@ -323,10 +329,9 @@ PRODUCT_COPY_FILES += \
 
 # RCS
 PRODUCT_PACKAGES += \
-    rcs_service_aidl \
-    rcs_service_aidl.xml \
-    rcs_service_api \
-    rcs_service_api.xml
+    com.android.ims.rcsmanager \
+    PresencePolling \
+    RcsService
 
 # Recovery
 PRODUCT_PACKAGES += \
@@ -338,9 +343,22 @@ PRODUCT_PACKAGES += \
 
 # RIL
 PRODUCT_PACKAGES += \
-    libprotobuf-cpp-full \
+    android.hardware.radio@1.2 \
+    android.hardware.radio@1.4 \
+    android.hardware.radio.config@1.0 \
+    android.hardware.secure_element@1.0 \
     librmnetctl \
-    libxml2
+    libcnefeatureconfig \
+    libxml2 \
+    libprotobuf-cpp-full \
+    qti-telephony-hidl-wrapper \
+    qti_telephony_hidl_wrapper.xml \
+    qti-telephony-utils \
+    qti_telephony_utils.xml \
+    telephony-ext
+
+PRODUCT_BOOT_JARS += \
+    telephony-ext
 
 # Seccomp policy
 PRODUCT_COPY_FILES += \
@@ -359,15 +377,6 @@ PRODUCT_PACKAGES += \
 PRODUCT_SOONG_NAMESPACES += \
     $(LOCAL_PATH) \
     hardware/xiaomi
-
-# Telephony
-PRODUCT_PACKAGES += \
-    ims-ext-common_system \
-    telephony-ext
-
-PRODUCT_BOOT_JARS += \
-    ims-ext-common_system \
-    telephony-ext
 
 # TextClassifier
 PRODUCT_PACKAGES += \

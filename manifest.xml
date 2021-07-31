@@ -214,16 +214,18 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>android.hardware.radio</name>
         <transport>hwbinder</transport>
-        <version>1.1</version>
+        <fqname>@1.1::IRadio/slot1</fqname>
+        <fqname>@1.1::IRadio/slot2</fqname>
+        <fqname>@1.2::ISap/slot1</fqname>
+        <fqname>@1.2::ISap/slot2</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.radio.config</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
         <interface>
-            <name>IRadio</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
-        </interface>
-        <interface>
-            <name>ISap</name>
-            <instance>slot1</instance>
-            <instance>slot2</instance>
+            <name>IRadioConfig</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
@@ -244,6 +246,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IDevice</name>
             <instance>default</instance>
         </interface>
+    </hal>
+    <hal format="hidl">
+       <name>android.hardware.secure_element</name>
+       <transport>hwbinder</transport>
+       <version>1.0</version>
+       <interface>
+           <name>ISecureElement</name>
+           <instance>SIM1</instance>
+           <instance>SIM2</instance>
+       </interface>
     </hal>
     <hal format="hidl">
         <name>android.hardware.sensors</name>
@@ -490,6 +502,16 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.data.connection</name>
+        <transport>hwbinder</transport>
+        <version>1.1</version>
+        <interface>
+            <name>IDataConnection</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.data.latency</name>
         <transport>hwbinder</transport>
         <version>1.0</version>
@@ -538,7 +560,7 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
     <hal format="hidl">
         <name>vendor.qti.hardware.radio.ims</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.4</version>
         <interface>
             <name>IImsRadio</name>
             <instance>imsradio0</instance>
@@ -575,9 +597,19 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
         </interface>
     </hal>
     <hal format="hidl">
+        <name>vendor.qti.hardware.radio.qtiradio</name>
+        <transport>hwbinder</transport>
+        <version>2.0</version>
+        <interface>
+            <name>IQtiRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
         <name>vendor.qti.hardware.radio.uim</name>
         <transport>hwbinder</transport>
-        <version>1.0</version>
+        <version>1.1</version>
         <interface>
             <name>IUim</name>
             <instance>Uim0</instance>
@@ -602,6 +634,15 @@ IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
             <name>IUimRemoteServiceServer</name>
             <instance>uimRemoteServer0</instance>
             <instance>uimRemoteServer1</instance>
+        </interface>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.qti.ims.callinfo</name>
+        <transport>hwbinder</transport>
+        <version>1.0</version>
+        <interface>
+            <name>IService</name>
+            <instance>default</instance>
         </interface>
     </hal>
     <hal format="hidl">
