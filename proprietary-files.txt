@@ -111,7 +111,6 @@ vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
-vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
@@ -132,7 +131,6 @@ vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
 vendor/lib/libmmcamera_ppeiscore.so
-vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
 vendor/lib/libmmcamera_tintless_algo.so
@@ -158,6 +156,11 @@ vendor/lib/libtm_interface.so
 vendor/lib/libubifocus.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
+
+# Camera - from daisy 10 QKQ1.191002.002 V11.0.21.0.QDLMIXM
+vendor/lib/libmmcamera2_dcrf.so|8701a3f154ed1dcc8b764a023628bf659d87cd0d
+vendor/lib/libmmcamera_dcrf_lib.so|5b834b8b8711f17c8b8b513c297198319fbd5d41
+vendor/lib/libmmcamera_stillmore_lib.so|1006d44580fbaa5b54bef0245cfb65df27ea9394
 
 # Camera - from Hydrogen 7.0/NRD90M/V10.3.2.0.NBCCNXM
 vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
