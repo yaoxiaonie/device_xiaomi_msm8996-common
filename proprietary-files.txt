@@ -87,6 +87,7 @@ vendor/lib64/vendor.qti.hardware.fm@1.0_vendor.so
 
 # Camera
 vendor/bin/mm-qcamera-daemon
+vendor/lib/libblurbuster.so
 vendor/lib/libchromaflash.so
 vendor/lib/libflash_pmic.so
 vendor/lib/libjpegdhw.so
@@ -110,6 +111,7 @@ vendor/lib/libmmcamera2_stats_modules.so
 vendor/lib/libmmcamera_chromaflash_lib.so
 vendor/lib/libmmcamera_csidtg.so
 vendor/lib/libmmcamera_dbg.so
+vendor/lib/libmmcamera_dcrf_lib.so
 vendor/lib/libmmcamera_dummyalgo.so
 vendor/lib/libmmcamera_eebinparse.so
 vendor/lib/libmmcamera_eeprom_util.so
@@ -129,6 +131,7 @@ vendor/lib/libmmcamera_paaf_lib.so
 vendor/lib/libmmcamera_pdaf.so
 vendor/lib/libmmcamera_pdafcamif.so
 vendor/lib/libmmcamera_ppbase_module.so
+vendor/lib/libmmcamera_ppeiscore.so
 vendor/lib/libmmcamera_stillmore_lib.so
 vendor/lib/libmmcamera_sw2d_lib.so
 vendor/lib/libmmcamera_thread_services.so
@@ -155,6 +158,11 @@ vendor/lib/libtm_interface.so
 vendor/lib/libubifocus.so
 lib/libtrueportrait.so:vendor/lib/libtrueportrait.so
 lib64/libtrueportrait.so:vendor/lib64/libtrueportrait.so
+
+# Camera - from Hydrogen 7.0/NRD90M/V10.3.2.0.NBCCNXM
+vendor/lib/libllvd_smore.so|740de4c339772df80858ddd9390f91ead71eadeb
+vendor/lib/libllvd_sw_tnr.so|406895e2ae614ac84a62d1758bce1810b99c5cda
+vendor/lib/libmmcamera_sw_tnr.so|59b0f350eb0cfa85399c296af14ac680ca99705e
 
 # Camera firmware
 etc/firmware/cpp_firmware_v1_10_0.fw:vendor/firmware/cpp_firmware_v1_10_0.fw

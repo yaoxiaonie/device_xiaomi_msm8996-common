@@ -138,6 +138,7 @@ PRODUCT_PACKAGES += \
     camera.msm8996 \
     android.hardware.camera.common@1.0 \
     libmm-qcamera \
+    libui_shim \
     libfui \
     libstdc++.vendor
 
